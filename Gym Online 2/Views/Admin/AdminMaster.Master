@@ -1,0 +1,58 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminMaster.master.cs" Inherits="Gym_Online_2.Views.Admin.AdminMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>GYM</title>
+    <link href="AdminStyleSheet1.css" rel="stylesheet" />
+    <link href="../../Assets/Lib/css/bootstrap.min.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">        
+        <div class="main">
+            <div class="side-bar">
+                <div class="user">
+                    <img src="../../Assets/Images/user.png" class="user-img" />
+                    <div>
+                        <h2>Thomas</h2>
+                        <p></p>
+                    </div>
+                    <img src="../../Assets/Images/star.png" class="star-img" />
+                </div>
+                <ul class="ul-container ww">
+                    <li><img  src="../../Assets/Images/dashboard.png" /><a href="DashBoard.aspx" style="color:white;"><p>DashBoard</p></a></li>
+                    <li><img src="../../Assets/Images/projects.png" /><a href="Admin.aspx" style="color:white;"><p>Admin</p></a></li>
+                    <li><img src="../../Assets/Images/reports.png" /><a href="Receptionists.aspx" style="color:white;"><p>Receptionist</p></a></li>
+                    <li><img src="../../Assets/Images/members.png" /><a href="Membership.aspx" style="color:white;"><p>Member</p></a></li>             
+                </ul>
+                <ul  class="ul-container">
+                   <li> <img src="../../Assets/Images/logout.png" /><a href="../LogIn.aspx" style="color:deeppink;"><p>Log Out</p></a></li>
+                </ul>
+            </div>
+            <div class="right-side-container">
+                <header>
+                    <div class="header-div">
+                    <ul class="ul-container-headre">
+                       <li>Home</li>
+                       <li>Menu</li>
+                      <li>Contact Us</li>
+                      <li>About</li>             
+                </ul>
+                    <div>                     
+                        <img src="../../Assets/Images/user.png" class="user-img" />
+                    </div>
+                        </div>
+                </header>
+                <div class="body">
+                     <asp:ContentPlaceHolder ID="MyBody" runat="server">
+                     </asp:ContentPlaceHolder>
+                </div>
+                <div class="footer">footer</div>
+            </div>
+        </div>     
+    </form>
+</body>
+</html>
